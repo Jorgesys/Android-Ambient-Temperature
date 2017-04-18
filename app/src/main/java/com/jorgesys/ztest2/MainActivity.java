@@ -23,7 +23,7 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		temperaturelabel = (TextView) findViewById(R.id.myTemp);
+		temperaturelabel = (TextView) findViewById(R.id.txt_temperature);
 		mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
 		if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.ICE_CREAM_SANDWICH){
 			mTemperature= mSensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE);	// requires API level 14.
